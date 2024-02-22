@@ -7,7 +7,6 @@
             "@component": ["component"],
             "@component/*": ["component/*"],
             "@context/*": ["context/*"],
-            "@img": ["asset/img"],
             "@style/*": ["style/*"],
             "@util": ["util"],
             "@util/*": ["util/*"],

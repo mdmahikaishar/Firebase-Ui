@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { InputField } from "@component/Form";
 import { validate } from "@util";
+import { FaEnvelope, FaLock } from "react-icons/fa";
 
 export default function Login() {
     const [state, setState] = useState({
@@ -52,7 +53,7 @@ export default function Login() {
             <form className="flex flex-col gap-2" onSubmit={fSubmit}>
                 <InputField
                     type="email"
-                    icon={"iconMail"}
+                    icon={FaEnvelope}
                     placeholder="Email"
                     value={state.email}
                     helpX={state.error.email}
@@ -60,7 +61,7 @@ export default function Login() {
                 />
                 <InputField
                     type="password"
-                    icon={"iconEncrypt"}
+                    icon={FaLock}
                     placeholder="Password"
                     value={state.password}
                     helpX={state.error.password}

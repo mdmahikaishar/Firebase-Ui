@@ -1,4 +1,3 @@
-export { default as IconPicker } from "./IconPicker";
 export { default as SidebarFunc } from "./SidebarFunc";
 export { default as search } from "./search";
 export { default as validate } from "./validate";

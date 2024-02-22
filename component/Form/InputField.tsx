@@ -1,12 +1,12 @@
 import { useRef, useState } from "react";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
-import { IconPicker } from "@util";
-import { tIcon } from "@type/util";
+import { FaEyeSlash, FaRegEye } from "react-icons/fa";
+import { IconType } from "react-icons";
 
 interface iInputField {
     type?: "text" | "email" | "password";
     name?: string;
-    icon?: tIcon;
+    icon?: IconType;
     placeholder?: string;
     value?: string;
     helpX?: string;
@@ -16,7 +16,6 @@ interface iInputField {
 
 export default function InputField({
     type,
-    icon,
     helpX,
     children,
     ...props
@@ -70,7 +69,7 @@ export default function InputField({
                 onClick={fGetFocus}
             >
                 <div className="flex-none w-5 h-5 grid place-items-center pointer-events-none">
-                    <IconPicker icon={icon} />
+                    {props.icon && <props.icon/>}
                 </div>
                 <input
                     className="grow outline-none"
@@ -87,14 +86,14 @@ export default function InputField({
                             className="flex-none w-4 h-4 grid place-items-center cursor-pointer"
                             onClick={fShowPassword}
                         >
-                            <IconPicker icon={"iconClosedEye"} />
+                            <FaEyeSlash />
                         </div>
                     ) : (
                         <div
                             className="flex-none w-4 h-4 grid place-items-center cursor-pointer"
                             onClick={fHidePassword}
                         >
-                            <IconPicker icon={"iconEye"} />
+                            <FaRegEye/>
                         </div>
                     ))}
             </motion.div>

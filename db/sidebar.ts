@@ -1,20 +1,20 @@
 import { iSidebarItem } from "@type/component/Sidebar.d";
-import img from "@img";
+import { FaAlignJustify, FaAndroid, FaBell, FaCamera, FaDatabase, FaEye, FaFirefox, FaGoogle, FaHome, FaImage, FaJava, FaJs, FaMedapps, FaPaintBrush, FaPhp, FaSearch, FaTextHeight, FaUser, FaVideo } from "react-icons/fa";
 
 const sidebar: Array<iSidebarItem> = [
     {
         name: "Introduction",
         href: "/introduction",
-        icon: "iconOverview",
+        icon: FaHome,
     },
     {
         name: "Build Your First App",
         href: "/build-your-first-app",
-        icon: "iconAndroidOs",
+        icon: FaAndroid,
     },
     {
         name: "Concept For Beginner",
-        icon: "iconConcept",
+        icon: FaMedapps,
         more: true,
         content: {
             name: "Concept For Beginner",
@@ -22,27 +22,25 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Introduce",
                     href: "/-",
-                    icon: "iconOverview",
+                    icon: FaHome,
                 },
                 {
                     name: "XML",
                     href: "/-",
-                    icon: "iconXmlFile",
                 },
                 {
                     name: "PHP",
                     href: "/-",
-                    icon: "iconPhp",
+                    icon: FaPhp,
                 },
                 {
                     name: "MYSQL/SQLite",
                     href: "/-",
-                    icon: "iconSql",
                 },
                 {
                     name: "JSON",
                     href: "/-",
-                    icon: "iconJson",
+                    icon: FaJava,
                 },
                 {
                     name: "JAVA",
@@ -51,14 +49,14 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "JAVASCRIPT",
                     href: "/-",
-                    icon: "iconJavascript",
+                    icon: FaJs,
                 },
             ],
         },
     },
     {
         name: "User Activities",
-        icon: "iconUser",
+        icon: FaUser,
         more: true,
         content: {
             name: "User Activities",
@@ -70,82 +68,75 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Dialog",
                     href: "/-",
-                    icon: "iconError",
                 },
                 {
                     name: "Navigation Action Bar",
                     href: "/-",
-                    icon: "iconMenu",
+                    icon: FaAlignJustify,
                 },
                 {
                     name: "Top Sheet",
                     href: "/-",
-                    icon: "iconDataSheet",
+                    icon: FaDatabase,
                 },
                 {
                     name: "Bottom Sheet",
                     href: "/-",
-                    icon: "iconDataSheet",
+                    icon: FaDatabase,
                 },
                 {
                     name: "Screen Overlay",
                     href: "/-",
-                    icon: "iconOverlap",
                 },
             ],
         },
     },
     {
         name: "Works with Views",
-        icon: "iconViewColumn",
+        icon: FaAlignJustify,
         more: true,
         content: {
             name: "Works with Views",
             dropdown: [
                 {
                     name: "Basic Views",
-                    icon: "iconViewColumn",
+                    icon: FaAlignJustify,
                     more: true,
                     content: [
                         {
                             name: "Text View",
                             href: "/-",
-                            icon: "iconText",
+                            icon: FaTextHeight,
                         },
                         {
                             name: "Image View",
                             href: "/-",
-                            icon: "iconPicture",
+                            icon: FaImage,
                         },
                         {
                             name: "Button",
                             href: "/-",
-                            icon: "iconButton",
                         },
                         {
                             name: "Image Button",
                             href: "/-",
-                            icon: "iconButton",
                         },
                         {
                             name: "Switch",
                             href: "/-",
-                            icon: "iconSwitches",
                         },
                         {
                             name: "Toggle Button",
                             href: "/-",
-                            icon: "iconToggle",
                         },
                         {
                             name: "Check Box",
                             href: "/-",
-                            icon: "iconCheckedRadioButton",
                         },
                         {
                             name: "Edit Text",
                             href: "/-",
-                            icon: "iconDraw",
+                            icon: FaPaintBrush
                         },
                         {
                             name: "Spinner",
@@ -158,17 +149,15 @@ const sidebar: Array<iSidebarItem> = [
                         {
                             name: "Progress Bar",
                             href: "/-",
-                            icon: "iconProgressbar95",
                         },
                         {
                             name: "Radio Group",
                             href: "/-",
-                            icon: "iconCheckedRadioButton2",
                         },
                         {
                             name: "Video View",
                             href: "/-",
-                            icon: "iconVideo",
+                            icon: FaVideo,
                         },
                         {
                             name: "Table View",
@@ -178,23 +167,20 @@ const sidebar: Array<iSidebarItem> = [
                 },
                 {
                     name: "Parent Views",
-                    icon: "iconViewColumn",
+                    icon: FaAlignJustify,
                     more: true,
                     content: [
                         {
                             name: "Linear Layout",
                             href: "/-",
-                            icon: "iconThickVerticalLine",
                         },
                         {
                             name: "Relative Layout",
                             href: "/-",
-                            icon: "iconViewColumn",
                         },
                         {
                             name: "Frame Layout",
                             href: "/-",
-                            icon: "iconFrame",
                         },
                         {
                             name: "Card View",
@@ -225,17 +211,15 @@ const sidebar: Array<iSidebarItem> = [
                         {
                             name: "Image Viewer View",
                             href: "/-",
-                            icon: "iconPicture",
+                            icon: FaImage
                         },
                         {
                             name: "Image Picker View",
                             href: "/-",
-                            icon: "iconPicture",
                         },
                         {
                             name: "Popup Menu",
                             href: "/-",
-                            icon: "iconPopup",
                         },
                         {
                             name: "Circle Menu",
@@ -252,7 +236,6 @@ const sidebar: Array<iSidebarItem> = [
                         {
                             name: "Pager View",
                             href: "/-",
-                            icon: "iconViewColumn",
                         },
                         {
                             name: "Tab View",
@@ -273,7 +256,7 @@ const sidebar: Array<iSidebarItem> = [
                         {
                             name: "Search Bar",
                             href: "/-",
-                            icon: "iconSearch",
+                            icon: FaSearch
                         },
                         {
                             name: "Guage View",
@@ -292,7 +275,7 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Recycler View",
                     href: "/-",
-                    icon: "iconMenu",
+                    icon: FaAlignJustify,
                     more: true,
                     content: [
                         {
@@ -319,13 +302,12 @@ const sidebar: Array<iSidebarItem> = [
                 },
                 {
                     name: "Web View",
-                    icon: "iconWeb",
+                    icon: FaFirefox,
                     more: true,
                     content: [
                         {
                             name: "Web View",
                             href: "/-",
-                            icon: "iconWeb",
                         },
                         {
                             name: "Offline View Options",
@@ -342,7 +324,7 @@ const sidebar: Array<iSidebarItem> = [
                         {
                             name: "JS Interface",
                             href: "/-",
-                            icon: "iconJavascript",
+                            icon: FaJs
                         },
                         {
                             name: "Web RTC",
@@ -378,7 +360,7 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Notification",
                     href: "/-",
-                    icon: "iconBell",
+                    icon: FaBell
                 },
                 {
                     name: "Play Sound",
@@ -397,7 +379,6 @@ const sidebar: Array<iSidebarItem> = [
     },
     {
         name: "Dialogs",
-        icon: "iconError",
         more: true,
         content: {
             name: "Dialogs",
@@ -472,13 +453,12 @@ const sidebar: Array<iSidebarItem> = [
                 },
                 {
                     name: "Special Dialogs",
-                    icon: "iconError",
                     more: true,
                     content: [
                         {
                             name: "Speech To Text",
                             href: "/-",
-                            icon: "iconText",
+                            icon: FaTextHeight
                         },
                         {
                             name: "Biometric Auth",
@@ -487,17 +467,16 @@ const sidebar: Array<iSidebarItem> = [
                         {
                             name: "Pdf Viewer",
                             href: "/-",
-                            icon: "iconPdf",
                         },
                         {
                             name: "Image Viewer",
                             href: "/-",
-                            icon: "iconPicture",
+                            icon: FaImage
                         },
                         {
                             name: "Camera Viewer",
                             href: "/-",
-                            icon: "iconCamera",
+                            icon: FaCamera
                         },
                     ],
                 },
@@ -506,7 +485,7 @@ const sidebar: Array<iSidebarItem> = [
     },
     {
         name: "Graphics",
-        icon: "iconGraphics",
+        icon: FaImage,
         more: true,
         content: {
             name: "Graphics",
@@ -514,7 +493,7 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Color",
                     href: "/-",
-                    icon: "iconColorDropper",
+                    icon: FaEye
                 },
                 {
                     name: "Gradient",
@@ -535,7 +514,6 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "On-Touch Style",
                     href: "/-",
-                    icon: "iconTouch",
                 },
                 {
                     name: "Gradient Animation",
@@ -552,19 +530,17 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Bitmap Editing",
                     href: "/-",
-                    icon: "iconPicture",
                 },
                 {
                     name: "Canvas",
                     href: "/-",
-                    icon: "iconCanvas",
                 },
             ],
         },
     },
     {
         name: "User's Information",
-        icon: "iconUser",
+        icon:FaUser,
         more: true,
         content: {
             name: "User's Information",
@@ -572,37 +548,30 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Contact List",
                     href: "/-",
-                    icon: "iconPhone",
                 },
                 {
                     name: "SMS/MMS",
                     href: "/-",
-                    icon: "iconSms",
                 },
                 {
                     name: "Call Log",
                     href: "/-",
-                    icon: "iconPhone",
                 },
                 {
                     name: "Calender",
                     href: "/-",
-                    icon: "iconCalculator",
                 },
                 {
                     name: "Phone Call",
                     href: "/-",
-                    icon: "iconPhone",
                 },
                 {
                     name: "Microphone",
                     href: "/-",
-                    icon: "iconMicrophone",
                 },
                 {
                     name: "Camera",
                     href: "/-",
-                    icon: "iconCamera",
                 },
                 {
                     name: "Screen Projection",
@@ -611,33 +580,27 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Sensors",
                     href: "/-",
-                    icon: "icon3dTouch",
                 },
                 {
                     name: "Location",
                     href: "/-",
-                    icon: "iconLocation",
                 },
                 {
                     name: "Device Info",
                     href: "/-",
-                    icon: "iconSmartphoneRam",
                 },
                 {
                     name: "Connectivity Usage",
                     href: "/-",
-                    icon: "iconConnect",
                     more: true,
                     content: [
                         {
                             name: "Bluetooth",
                             href: "/-",
-                            icon: "iconBluetooth",
                         },
                         {
                             name: "WiFi",
                             href: "/-",
-                            icon: "iconWiFi",
                         },
                         {
                             name: "NFC",
@@ -654,40 +617,33 @@ const sidebar: Array<iSidebarItem> = [
                         {
                             name: "USB",
                             href: "/-",
-                            icon: "iconUsb2",
                         },
                         {
                             name: "Http",
                             href: "/-",
-                            icon: "iconWeb",
                         },
                     ],
                 },
                 {
                     name: "Hardware Changes",
                     href: "/-",
-                    icon: "iconSmartphoneRam",
                     more: true,
                     content: [
                         {
                             name: "Change Date-Time",
                             href: "/-",
-                            icon: "iconCalendar",
                         },
                         {
                             name: "Bluetooth",
                             href: "/-",
-                            icon: "iconBluetooth",
                         },
                         {
                             name: "WiFi",
                             href: "/-",
-                            icon: "iconWiFi",
                         },
                         {
                             name: "Flash Light",
                             href: "/-",
-                            icon: "iconCameraFlash",
                         },
                         {
                             name: "Volume",
@@ -704,7 +660,6 @@ const sidebar: Array<iSidebarItem> = [
                         {
                             name: "Touch Simulate",
                             href: "/-",
-                            icon: "iconTouch",
                         },
                     ],
                 },
@@ -713,7 +668,7 @@ const sidebar: Array<iSidebarItem> = [
     },
     {
         name: "Database",
-        icon: "iconDatabase",
+        icon: FaDatabase,
         more: true,
         content: {
             name: "Database",
@@ -721,12 +676,10 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Shared Preference",
                     href: "/-",
-                    icon: "iconShare",
                 },
                 {
                     name: "SQLite Database",
                     href: "/-",
-                    icon: "iconSql",
                 },
                 {
                     name: "Temp Variables",
@@ -737,7 +690,6 @@ const sidebar: Array<iSidebarItem> = [
     },
     {
         name: "Event Listeners",
-        icon: "iconEvent",
         more: true,
         content: {
             name: "Event Listeners",
@@ -753,7 +705,6 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Touch Event",
                     href: "/-",
-                    icon: "icon3dTouch",
                 },
                 {
                     name: "Schedule Work",
@@ -768,7 +719,6 @@ const sidebar: Array<iSidebarItem> = [
     },
     {
         name: "File Options",
-        icon: "iconFile",
         more: true,
         content: {
             name: "File Options",
@@ -776,37 +726,31 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Read / Write",
                     href: "/-",
-                    icon: "iconRead",
                 },
                 {
                     name: "Copy / Move / Delete / Rename",
                     href: "/-",
-                    icon: "iconCopy",
                 },
                 {
                     name: "Zip / Unzip",
                     href: "/-",
-                    icon: "iconZip",
                 },
                 {
                     name: "Encrypt / Decrypt",
                     href: "/-",
-                    icon: "iconEncrypt",
                 },
                 {
                     name: "Upload / Download",
                     href: "/-",
-                    icon: "iconUpload",
                 },
                 {
                     name: "Search",
                     href: "/-",
-                    icon: "iconSearch",
+                    icon: FaSearch
                 },
                 {
                     name: "Print",
                     href: "/-",
-                    icon: "iconPrint",
                 },
             ],
         },
@@ -814,7 +758,6 @@ const sidebar: Array<iSidebarItem> = [
     {
         name: "App Settings",
         href: "/-",
-        icon: "iconSettings",
     },
     {
         name: "External Intent",
@@ -823,7 +766,6 @@ const sidebar: Array<iSidebarItem> = [
     {
         name: "Chip Board",
         href: "/-",
-        icon: "iconClipboard",
     },
     {
         name: "Device Admin",
@@ -831,7 +773,6 @@ const sidebar: Array<iSidebarItem> = [
     },
     {
         name: "Artificial Intelligences",
-        icon: "iconAi",
         more: true,
         content: {
             name: "Artificial Intelligences",
@@ -839,7 +780,6 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Touch Gesture",
                     href: "/-",
-                    icon: "icon3dTouch",
                 },
                 {
                     name: "Sensor Gesture",
@@ -848,7 +788,6 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Face Recognition",
                     href: "/-",
-                    icon: "iconFace",
                 },
                 {
                     name: "OCR",
@@ -857,14 +796,13 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Google Assistance",
                     href: "/-",
-                    icon: "iconGoogle",
+                    icon:FaGoogle
                 },
             ],
         },
     },
     {
         name: "Object Oriented Program",
-        icon: "iconObject",
         more: true,
         content: {
             name: "Object Oriented Program",
@@ -872,27 +810,22 @@ const sidebar: Array<iSidebarItem> = [
                 {
                     name: "Condition",
                     href: "/-",
-                    icon: "iconConditionals1",
                 },
                 {
                     name: "Loop",
                     href: "/-",
-                    icon: "iconLoop",
                 },
                 {
                     name: "Math",
                     href: "/-",
-                    icon: "iconCalculator",
                 },
                 {
                     name: "Unit Converter",
                     href: "/-",
-                    icon: "iconUnit",
                 },
                 {
                     name: "Data Encryption",
                     href: "/-",
-                    icon: "iconEncrypt",
                 },
             ],
         },
@@ -905,7 +838,7 @@ const sidebar: Array<iSidebarItem> = [
             dropdown: [
                 {
                     name: "Google Service",
-                    icon: "iconGoogle",
+                    icon: FaGoogle,
                     more: true,
                     content: [
                         {
@@ -915,7 +848,6 @@ const sidebar: Array<iSidebarItem> = [
                         {
                             name: "Google Translate",
                             href: "/-",
-                            icon: "iconGoogleTranslate",
                         },
                         {
                             name: "Google Auth",
@@ -924,7 +856,6 @@ const sidebar: Array<iSidebarItem> = [
                         {
                             name: "Google Drive",
                             href: "/-",
-                            icon: "iconGoogleDrive",
                         },
                         {
                             name: "Google Pay",
@@ -933,13 +864,11 @@ const sidebar: Array<iSidebarItem> = [
                         {
                             name: "Google Map",
                             href: "/-",
-                            icon: "iconMap",
                         },
                     ],
                 },
                 {
                     name: "Firebase Service",
-                    icon: "firebase",
                     more: true,
                     content: [
                         {
@@ -949,7 +878,6 @@ const sidebar: Array<iSidebarItem> = [
                         {
                             name: "Firebase Notification",
                             href: "/-",
-                            icon: "iconBell",
                         },
                         {
                             name: "Realtime Database",

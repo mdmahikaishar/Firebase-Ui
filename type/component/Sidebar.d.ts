@@ -1,10 +1,11 @@
 import { tIcon } from "@type/util";
+import { IconType } from "react-icons"
 
 // ITEM
 export interface iSidebarItem {
     name: string;
     href?: string;
-    icon?: tIcon;
+    icon?: IconType;
     active?: boolean;
     more?: boolean;
     onClick?: () => any;
@@ -16,7 +17,7 @@ export interface iSidebarItem {
 export interface iDropdownItem {
     name: string;
     href?: string;
-    icon?: tIcon;
+    icon?: IconType;
     active?: boolean;
     more?: boolean;
     onClick?: () => any;
@@ -59,9 +60,9 @@ export interface iSidebarDropdownProps {
 export interface iDropdownTitleProps {
     name: string;
     href?: string;
-    icon: tIcon;
+    icon?: IconType;
     hasContent: boolean;
     isContent: boolean;
     onClick: () => any;
 }
-export interface iDropdownSubTitleProps extends iDropdownTitleProps {}
+export interface iDropdownSubTitleProps extends iDropdownTitleProps { }

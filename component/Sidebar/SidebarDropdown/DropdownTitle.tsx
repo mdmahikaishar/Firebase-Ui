@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaArrowDown } from "react-icons/fa";
 import { iDropdownTitleProps } from "@type/component/Sidebar.d";
-import { IconPicker, SidebarFunc } from "@util";
+import { SidebarFunc } from "@util";
 
 export default function DropdownTitle(props: iDropdownTitleProps) {
     const { fCloseAll } = SidebarFunc();
@@ -20,7 +20,7 @@ export default function DropdownTitle(props: iDropdownTitleProps) {
     );
 }
 
-function MainTitle({ name, icon, hasContent, onClick }: iDropdownTitleProps) {
+function MainTitle({ name,  hasContent, onClick, ...props }: iDropdownTitleProps) {
     return (
         <div
             className="py-1 pl-4 pr-3 flex items-center justify-between text-gray-600 rounded-tr-full rounded-br-full cursor-pointer select-none hover:bg-gray-100"
@@ -28,7 +28,7 @@ function MainTitle({ name, icon, hasContent, onClick }: iDropdownTitleProps) {
         >
             <div className="grow flex items-center gap-2">
                 <span className="flex-none w-4 h-4 grid place-items-center">
-                    <IconPicker icon={icon} />
+                    {props.icon && <props.icon />}
                 </span>
 
                 <span className="grow font-bold">{name}</span>

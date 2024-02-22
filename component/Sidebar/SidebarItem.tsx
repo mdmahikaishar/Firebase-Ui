@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { iSidebarItem } from "@type/component/Sidebar.d";
-import { IconPicker, SidebarFunc } from "@util";
+import { SidebarFunc } from "@util";
 
 export default function SidebarItem(props: iSidebarItem) {
     const { fCloseAll } = SidebarFunc();
@@ -21,7 +21,7 @@ export default function SidebarItem(props: iSidebarItem) {
     );
 }
 
-function MainItem({ name, icon, active, more, onClick }: iSidebarItem) {
+function MainItem({ name, active, more, onClick, ...props }: iSidebarItem) {
     return (
         <div
             className={`py-1 pl-4 pr-3 flex items-center justify-between rounded-tr-full rounded-br-full cursor-pointer select-none ${
@@ -33,7 +33,7 @@ function MainItem({ name, icon, active, more, onClick }: iSidebarItem) {
         >
             <div className="grow flex items-center gap-2">
                 <span className="flex-none w-4 h-4 grid place-items-center">
-                    <IconPicker icon={icon} />
+                    {props.icon && <props.icon />}
                 </span>
 
                 <span className="grow">{name}</span>

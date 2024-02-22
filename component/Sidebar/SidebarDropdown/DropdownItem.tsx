@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { iDropdownItem } from "@type/component/Sidebar.d";
-import { IconPicker, SidebarFunc } from "@util";
+import { SidebarFunc } from "@util";
 
 export default function DropdownItem(props: iDropdownItem) {
     const { fCloseAll } = SidebarFunc();
@@ -18,7 +18,7 @@ export default function DropdownItem(props: iDropdownItem) {
     );
 }
 
-function MainItem({ name, icon, onClick }: iDropdownItem) {
+function MainItem({ name, onClick, ...props }: iDropdownItem) {
     return (
         <motion.div
             className={`py-1 pl-1 pr-3 flex items-center gap-2 text-gray-600 rounded-tr-full rounded-br-full cursor-pointer select-none hover:bg-gray-200 ${
@@ -36,7 +36,7 @@ function MainItem({ name, icon, onClick }: iDropdownItem) {
             onClick={onClick}
         >
             <span className="flex-none w-4 h-4 grid place-items-center">
-                <IconPicker icon={icon} />
+                {props.icon && <props.icon />}
             </span>
 
             <span>{name}</span>
